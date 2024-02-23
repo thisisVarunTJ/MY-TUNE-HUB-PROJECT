@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+	<style>
+	body{
+		
+		background-image: url('images/tunehub.jpg');
+		}
+	</style>
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<form action="/register" method="post">
+    
+    <label>UserName:</label>  
+    <input type="text"  name="username"
+    width="20px" />
+    <br/><br>
+
+    <label>Email ID:</label> 
+    <input type="email"  name="email"/>
+    <br/><br>
+
+    <label>Password :</label>
+    <input type="password" name="password"/>
+    <br/><br/>
+    
+    <label>Gender :</label>
+
+    <label>M </label>
+    <input type="radio" name="gender" value="Male">
+
+    
+    <label>F </label>
+    <input type="radio" name="gender" value="Female">
+
+    <label>Others </label>
+    <input type="radio" name="gender" value="Others">
+
+    <br/><br>
+    
+     <label>Role :</label>
+     Admin<input type="radio" name="role" value="admin">
+     User<input type="radio" name="role" value="user">
+     
+     <br/><br>
+     
+     <label>Address :</label>
+    <textarea  
+        type="text" 
+        placeholder="Enter your Address here" 
+        name="address">
+    </textarea>
+    <br/><br/>
+    
+     <input type="submit" value="REGISTER">
+    </form>
+</body>
+</html>
